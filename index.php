@@ -23,24 +23,31 @@
 
   
   <h3 class="text-center mb-5" style="font-weight: 800; font-size: 35px">
-    Cómo pasar y obtener variables desde una URL con PHP <strong>Archivo</strong> 
+    Cómo pasar y obtener variables desde una URL con  <strong>PHP</strong> 
     <hr>
   </h3>
 
-<?php 
-//pathinfo: Devuelve información acerca de la ruta de un fichero
-//PATHINFO_EXTENSION: devuelde la extension del archivo
-  $rutaArchivo = "‪‪archivos/demoWord.word";
-  $extension_archivo = pathinfo($rutaArchivo, PATHINFO_EXTENSION);
-?>
+
+
+<form method="POST" action="data.php">
+  <div class="form-group">
+    <label for="nameFull">Nombre Completo</label>
+    <input type="text" name="nameFull" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="cedula">Cedula</label>
+    <input type="number" name="cedula" class="form-control">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+  </div>
+  <button type="submit" class="btn btn-primary btn-block">Enviar Registro</button>
+</form>
+ 
   
   <div class="row text-center">
     <div class="col">
-      <p style="font-size:20px;">La extensión del Archivo es:
-        <span style="color:#333; font-size: 25px; color:crimson;">
-          <?php echo $extension_archivo; ?>
-        </span>
-      </p>
+      <a href="data.php?canal=Webdeveloper">Enviar Variable</a>
     </div>
   </div>
 

@@ -29,7 +29,7 @@
 
 
 
-<form method="POST" action="data.php">
+<form method="GET" action="data.php">
   <div class="form-group">
     <label for="nameFull">Nombre Completo</label>
     <input type="text" name="nameFull" class="form-control">
@@ -38,14 +38,11 @@
     <label for="cedula">Cedula</label>
     <input type="number" name="cedula" class="form-control">
   </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-  </div>
   <button type="submit" class="btn btn-primary btn-block">Enviar Registro</button>
 </form>
  
-  
-  <div class="row text-center">
+
+  <div class="row text-center mt-5">
     <div class="col">
       <a href="data.php?canal=Webdeveloper">Enviar Variable</a>
     </div>

@@ -9,6 +9,13 @@ foreach ($_POST as $i => $value)
   echo 'Valores Recibidos:' .$value.'<br>';
 } 
 
+echo '<br>';
+
+foreach ($_POST as $key => $value) {
+
+    echo $key . ': ' . $value .'<br>';
+}
+
 
 
 //isset, Determina si una variable está definida y no es NULL
